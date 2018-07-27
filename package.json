@@ -1,15 +1,16 @@
 {
   "name": "node-sample",
   "version": "1.0.0",
-  "description": "",
+  "description": "NodeJS and Express, MongoDB sample",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
+    "start": "node_modules/.bin/nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "enkatsu <endkty0509@gmail.com> (https://github.com/endoh0509)",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.16.3"
+    "express": "^4.16.3",
+    "nodemon": "^1.18.3"
   }
 }

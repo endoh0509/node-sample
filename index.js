@@ -26,6 +26,18 @@ const places = [
   }
 ];
 
+/**
+ * 一覧取得
+ * http://localhost:3000/places
+ */
+app.get('/places', function (req, res) {
+  res.json(places);
+});
+
+/**
+ * 詳細取得
+ * http://localhost:3000/places/1
+ */
 app.get('/places/:id', function (req, res) {
   const place = places.find(function(place){
     return place.id === parseInt(req.params.id);
